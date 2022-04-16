@@ -101,3 +101,71 @@ input[type="button"]:hover{
     background-color: white;
     color: var(--color-primary);
 }
+
+
+
+@keyframes rotar {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(70deg);
+    }
+    40%{
+        transform: rotate(50deg);
+    }
+    60%{
+        transform: rotate(210deg);
+    }
+    80%{
+        transform: rotate(190deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+}
+
+@keyframes mostrar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }    
+}
+
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation-name: mostrar;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:forwards;
+    animation-play-state: running;
+}
+.hide{
+    display: none;
+    opacity: 0;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 1);
+}
+.paused{
+    animation-play-state: paused;
+}
+.icon-load{
+    animation-name: rotar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode:forwards;
+}

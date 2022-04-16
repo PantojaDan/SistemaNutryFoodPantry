@@ -13,6 +13,9 @@
 </head>
 <body>
     <div id="login-container">
+        <div class="capa hide">
+            <img class="icon-load paused" src="./img/clock.png" alt="reloj">
+        </div>
         <main>
             <h1>Bienvenido a NutryFoodPantry</h1>
             <div class="container-login">
@@ -28,7 +31,7 @@
                         <input type="password" name="password" placeholder="Ingresa tu contraseña">
                     </div>
                     <div id="button">
-                        <input type="button" value="Ingresar">
+                        <input id="ingresar" type="button" value="Ingresar">
                     </div>
                 </form>
     
@@ -39,5 +42,7 @@
             <p id="registro-cuenta">¿Aún no tienes una cuenta? <a href="#">Registrate</a></p>
         </main>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
