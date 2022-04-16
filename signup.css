@@ -1,7 +1,7 @@
 .container-form{
     width: 100vw;
     height: 100vh;
-    background-color: #deffce;
+    background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,7 @@
     height: 75%;
     padding: 1.5rem;
     border-radius: 0.5rem;
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.27);
 }
 
 
@@ -39,6 +40,7 @@
 #hero-form > p{
     margin-top: 0.2rem;
     font-size: 1.5rem;
+    font-weight: 900;
 }
 
 #data-user{
@@ -53,7 +55,7 @@
     flex-direction: column;
 }
 .separator label{
-    color: var(--color-primary);
+    color: #7f7f7f;
     font-weight: 900;
     margin-bottom: 0.2rem;
 }
