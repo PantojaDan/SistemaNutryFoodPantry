@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="./dashboard.css">
 </head>
 <body>
+    <div class="menu-dashboard hide-menu">
+        <ul id="nav-dash">
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Agregar lista</a></li>
+        </ul>
+    </div>
     <main class="container-dashboard">
         
         <header id="header-dashboard">
@@ -24,26 +32,44 @@
             </section>
         </header>
 
-        <div class="container-inventarios">
+        <section id="section-inv">
+    
             <h3 id="titulo-inventarios">Bienvenido <span>Pantoja2001</span></h3>
             
 
             <div id="inventarios">
 
-                <article class="inventario">
+                <form action="#" class="inventario">
                     <div class="img-inv"><img src="./img/despensa.png" alt="despensa"></div>
                     <div class="actions-inv">
                         <span>Mi Cocina</span>
-                        <i class="fa-regular fa-eye"></i>
+                        <button><i class="fa-regular fa-eye"></i></button>
                     </div>
-                </article>
+                </form>
+
+                <form action="#" class="inventario">
+                    <div class="img-inv"><img src="./img/caducado.png" alt="despensa"></div>
+                    <div class="actions-inv">
+                        <span>Productos Caducados</span>
+                        <button><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </form>
+
+                <form action="#" class="lista">
+                    <div class="img-list"><span>Fiesta de cumpleaños</span></div>
+                    <div class="actions-list">
+                        <button><i class="fa-regular fa-trash-can"></i></button>
+                        <button><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </form>
 
             </div>
-
-        </div>
+    
+        </section>
 
     </main>
 
+    <script src="./dashboard.js"></script>
     <script src="https://kit.fontawesome.com/eee10799b3.js" crossorigin="anonymous"></script>
 </body>
 </html>
