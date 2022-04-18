@@ -12,12 +12,25 @@
     <link rel="stylesheet" href="./dashboard.css">
 </head>
 <body>
+
+    <div class="container-agregar-inv ocultar-agregar-inv">
+        <div class="form-inv">
+            <form action="#">
+                <span>X</span>
+                <label for="nombre-inventario">Nombre inventario</label>
+                <input type="text" placeholder="Nombre inventario">
+                
+                <button>Crear</button>
+            </form>
+        </div>
+    </div>
+
     <div class="menu-dashboard hide-menu">
         <ul id="nav-dash">
             <li><a href="#">Acerca de</a></li>
             <li><a href="#">Privacidad</a></li>
             <li><a href="#">Soporte</a></li>
-            <li><a href="#">Agregar lista</a></li>
+            <li id="agregar-lista"><a href="#">Agregar lista</a></li>
         </ul>
     </div>
     <main class="container-dashboard">
