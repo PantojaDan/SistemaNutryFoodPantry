@@ -290,10 +290,9 @@
     overflow: hidden;
 }
 .form-inv label{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #18171c;
     margin-bottom: 1rem;
-    font-weight: 900;
 }
 .form-inv input{
     outline: none;
