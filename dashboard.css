@@ -1,7 +1,7 @@
 .container-dashboard{
     width: 100vw;
     height: 100vh;
-    background-color: #f3fff1;
+    background-color: #e7ebda;
 }
 
 
@@ -290,6 +290,7 @@
 .form-inv input{
     outline: none;
     padding: 0.5rem;
+    width: 80%;
     color: #7f7f7f;
     font-size: 1rem;
     border: 1px solid rgba(24, 23, 28, 0.466);
