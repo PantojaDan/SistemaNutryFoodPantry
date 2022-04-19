@@ -236,16 +236,16 @@
 /*Inicio. Estilos crear inventario*/
 .mostrar-agregar-inv{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ocultar-agregar-inv{
     display: none;
 }
 .container-agregar-inv{
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
     top: 0;
     left: 0;
     z-index: 1;
@@ -260,9 +260,9 @@
 }
 .form-inv form span{
     position: absolute;
-    top: 2px;
-    right: 2px;
-    padding: 0 0.5rem;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
     background-color: #18171c;
     color: white;
     font-weight: 900;
@@ -273,17 +273,19 @@
     height: 80%;
     position: relative;
     background-color: white;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .form-inv label{
     font-size: 1.5rem;
     color: #18171c;
     margin-bottom: 1rem;
+    font-weight: 900;
 }
 .form-inv input{
     outline: none;
