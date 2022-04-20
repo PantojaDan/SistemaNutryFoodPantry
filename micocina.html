@@ -13,7 +13,16 @@
 </head>
 <body>
     
-    <div class="modal-ingresar-producto mostrar-agregar-pro"><!--Ahorita lo oculto-->
+    <div class="modal-eliminar ocultar-modal-eliminar">
+        <form action="#">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <b>Usted esta a punto de eliminar un producto</b>
+            <p>¿Desea eliminarlo?</p>
+            <button>Eliminar</button>
+        </form>
+    </div>
+
+    <div class="modal-ingresar-producto ocultar-agregar-pro"><!--Ahorita lo oculto-->
         <div class="form-mi-cocina">
             <form action="#" class="form-ingresar-producto">
                 <span id="close-modal-ingresar">X</span>
@@ -33,6 +42,32 @@
             </form>
         </div>
     </div>
+
+    <header id="header-cocina">
+        <i class="fa-solid fa-angle-left"></i>
+
+        <aside id="options-cocina">
+            <h1>Mi Cocina</h1>
+
+            <ul id="options">
+                <li><i class="fa-solid fa-list-ul"></i>Generar lista de compra</li>
+                <li><i class="fa-solid fa-bell"></i>Notificar avisos</li>
+                <li class="add-pro-cocina"><i class="fa-solid fa-circle-plus"></i>Agregar producto</li>
+            </ul>
+        </aside>
+    </header>
+
+    <main class="productos-cocina">
+        <table>
+            <thead>
+                <tr><th>Nombre</th> <th>Cantidad minima</th> <th>Cantidad disponible</th> <th>Fecha de caducidad</th> <th>Acciones</th></tr>
+            </thead>
+
+            <tbody>
+                <tr><th>Leche Alpura</th> <th>2L</th> <th>4L</th> <th>23-09-2022</th> <th id="actions-pro"> <i class="fa-solid fa-rotate updated-product"></i> <i class="fa-regular fa-trash-can delete-pro"></i></th></tr>                
+            </tbody>
+        </table>
+    </main>
 
     <script src="https://kit.fontawesome.com/eee10799b3.js" crossorigin="anonymous"></script>
     <script src="./micocina.js"></script>
