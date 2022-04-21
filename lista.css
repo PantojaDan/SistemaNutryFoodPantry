@@ -1,0 +1,102 @@
+body{
+    background-color: #e7ebda;
+}
+#header-lista{
+    width: 100%;
+    background-color: #18171c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.fa-angle-left{
+    font-size: 2rem;
+    align-self: center;
+    color: white;
+    margin-left: 1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    transition: all ease 0.2s;
+}
+.fa-angle-left:hover{
+    background-color: #7f7f7f;
+}
+#options-lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#options-lista h1{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: white;
+}
+#options-lis{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+}
+#options-lis > li{
+    padding: 0.5rem;
+    color: white;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+#options-lis li:hover{
+    background-color: var(--color-primary);
+}
+#options-lis li i{
+    margin-right: 0.5rem;
+}
+#options-lis i{
+    font-size: 1.5rem;
+}
+.fa-circle-plus{
+    color: rgba(50, 206, 50, 0.897);
+    transition: all ease-in-out .2s;
+}
+#options-lis li:hover .fa-circle-plus{
+    color: white;
+}
+
+
+.productos-lista{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.productos-lista table{
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.08);
+}
+.productos-lista table thead th{
+    text-align: left;
+}
+.productos-lista table th{
+    padding: 0.5rem;
+}
+.productos-lista table tbody th{
+    font-weight: 100;
+    color: #7f7f7f;
+}
+#actions-pro-lista .fa-rotate{
+    padding: 0.4rem;
+    background-color: rgba(0, 0, 255, 0.658);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#actions-pro-lista .fa-trash-can{
+    padding: 0.4rem;
+    background-color: rgba(255, 0, 0, 0.774);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}

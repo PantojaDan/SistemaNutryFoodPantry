@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./lista.css">
 </head>
 <body>
     
+    <header id="header-lista">
+        <i class="fa-solid fa-angle-left"></i>
+
+        <aside id="options-lista">
+            <h1>Fiesta de cumpleaños</h1>
+
+            <ul id="options-lis">
+                <li class="add-pro-lista"><i class="fa-solid fa-circle-plus"></i>Agregar producto</li>
+            </ul>
+        </aside>
+    </header>
+
+    <main class="productos-lista">
+        <table>
+            <thead>
+                <tr><th>Nombre</th> <th>Cantidad</th> <th>Acciones</th> <th>Estado</th></tr>
+            </thead>
+
+            <tbody>
+                <tr><th>Nescafe Soluble</th> <th>2</th> <th id="actions-pro-lista"> <i class="fa-solid fa-rotate updated-product"></i> <i class="fa-regular fa-trash-can delete-pro"></i></th> <th>Adquirido</th></tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="https://kit.fontawesome.com/eee10799b3.js" crossorigin="anonymous"></script>
 </body>
 </html>
